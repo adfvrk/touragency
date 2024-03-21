@@ -1,0 +1,252 @@
+*,*:after, *:before{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(240, 236, 231);
+    min-width: 600px;
+}
+
+
+.header-container{
+    display: flex;
+    background-color: rgba(9, 83, 151, 0.938);
+    width: 100%;
+    padding: 10px 0 10px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button{
+   
+    padding: 10px ;
+    color: white;
+    border: 1px solid rgb(54, 98, 112);
+    border-radius: 5px;
+}
+.color1{
+    background-color: green;    
+}
+.color2{
+    background-color: rgb(240, 65, 65);
+}
+.color3{
+    background-color: rgb(10, 55, 95);
+}
+.main-container{
+  margin-bottom: 20px;
+ 
+}
+.header-text{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.anchor{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(201, 201, 101);
+    font-size: 24px;
+    display:inline-block;
+    margin-right:20px;
+}
+
+.main-piture{
+    height: 700px;
+    background-image: url('https://cdn.pixabay.com/photo/2018/02/22/08/05/palma-3172367_640.jpg');    
+    background-size: cover; /* Растягивает изображение, чтобы оно полностью покрывало фон */
+    background-position: center; /* Выравнивает изображение по центру */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+}
+
+
+.fixed{
+    display: flex;
+}
+
+.text-sm{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    margin: 10px 40px 10px auto;    
+}
+
+
+
+.tour-variants{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 920px;
+
+  margin: 20px auto;
+  padding: 20px;
+  background-color: aquamarine;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 15px 15px 0 rgba(0, 0, 0, 0.24);
+
+
+}
+
+.tour-cart{
+    height: 600px ;
+    width: 500px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(158, 204, 245);
+}
+
+.tour-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .tour-details{
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .tour-title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .tour-description{
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .tour-price{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(153, 129, 22);
+    padding-top: 5px;
+  }
+
+
+.header{
+    text-align: center;
+}
+
+
+h1,h2{
+    margin: 10px;
+}
+
+
+.form_tour{
+    display: flex;
+/* width: 800px; */
+/* margin: 40px auto; */
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: 2px solid black;
+padding: 20px;
+font-size: 20px;
+background-color: antiquewhite;
+border-radius: 20px;
+}
+
+table{
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+
+
+input, select{
+    width: 480px;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+
+td{
+    width: 250px;
+    height: 40px;
+}
+
+.btn{
+    height: 40px;
+    width: 750px;
+    margin: 10px;
+    background-color: rgb(36, 139, 131);
+    border-radius: 5px;
+    font-size: 30px;
+}
+.btn2{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+ .special{
+    width: auto;
+ }
+ .centered-cell{
+    text-align: center;
+ }
+
+.colorgreen{
+    background-color: rgb(14, 129, 58);
+}
+.colorblue{
+  background-color: rgb(46, 113, 136);
+}
+
+.dialog{
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);   
+    border: 0;
+    border-radius: 5px;
+
+}
+.dialog-content{
+    width: 500px;
+    background-color: rgb(224, 228, 219);
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid rgb(47, 71, 57);
+}
+#dialogContent{
+    margin: 20px 30px;
+   
+}
+
+.tour-button{
+    display: flex;
+    justify-content:center;
+}
+
+.message {
+    display:block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ac7575;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 1s ease-in-out;
+}

@@ -1,0 +1,79 @@
+1) назва -  туристична агенція
+
+  1) адмін панель для менеджера
+  2) сторінка вітальна для замовлення туру
+
+2) функціонал:
+    1) фронт
+       а) список турів як вигляд новити чи блог 
+       https://tourbest.com.ua/?gclid=CjwKCAiA98WrBhAYEiwA2WvhOrFHbNZr20vy7T43yCKwFCOXHkxASJS_4lyBXBw-P344GX3Jwpy7GhoCuPoQAvD_BwE  
+
+       б) форма для замовлення 
+           контактна інфа (тел, піп, емаїл,,,)
+           сам тур (з його id) 
+           дні на коли (календар)
+           кількість людей
+           вартість туру
+       в) будь який дизайн (можна здерти з іншого сайту)    
+
+    2) адмін
+       а) бачити всі зроблені замовлення по туру
+          - могти відредагувати (відмінити, одобрити)   
+
+        б) форма для створення туру (ціна на коли опис)
+          - список всіх турів і їх редагувати (crud)
+
+        в) список користувачів (менеджерів)  (crud)
+
+
+*****************************************************************************
+
+   код
+
+   бд - таблиці
+    - users (вже є)
+    - orders (створюємо)  
+       поля - id, тел, піп, емаїл, тур_id, дні, ціна 
+    - tours (створюємо)
+        id, name, price, img, description, status,
+
+
+   cmv - 
+     -  UserController    crud
+     -   OrderController    crud
+     -   TourController    crud
+     -   WelcomeController  form
+
+        - Order  model
+        - Tour  model
+
+
+        -welcome route
+        -order route  
+        -tour route
+        -user route
+
+        
+        -order view (папка)
+           create.blade.php
+           show.blade.php
+           edit.blade.php
+           order.blade.php
+
+        -welcome view (папка)
+           create.blade.php
+           show.blade.php
+           edit.blade.php
+           welcome.blade.php
+
+        -tour view (папка)
+           create.blade.php
+           show.blade.php
+           edit.blade.php
+           tour.blade.php
+
+        -user view (папка)
+           create.blade.php
+           show.blade.php
+           edit.blade.php
+           user.blade.php
